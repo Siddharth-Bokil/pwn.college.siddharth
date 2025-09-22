@@ -7,8 +7,7 @@
 ## Process
 I use a linux environment and I didn't find any video explanation as to how to do the challenge from my terminal. Then I realised all I had to do was run 
 `ssh hacker@dojo.pwn.college`
-in my own terminal **after** starting the challenge.
-After this I ran 
+in my own terminal **after** starting the challenge. Then I ran 
 ```
 hello hacker
 ```
