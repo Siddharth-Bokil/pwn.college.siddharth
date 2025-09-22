@@ -1,4 +1,4 @@
-# Intro to Arguements
+# Intro to Commands
 
 ### In this first challenge, the task was simple. I had to run a hello command and retrieve its output.
 
