@@ -8,7 +8,7 @@
 Ran `cat flag` to get the flag.
 
 ## What I learned
-Learned that cat can be used to append two files and give their output at the same time.
+Cat can be used to append two files and give their output at the same time.
 
 ## References
 No references used.
@@ -147,17 +147,22 @@ No references used.
 
 
 
-# Cat Command
+# Touching Files
 
-### Use cat to read out a file
+### Use touch to create files
 
-**Flag:**
+**Flag:** `pwn.college{M1FEQ0P0TOUrM4mvyV88nzc5Ajq.QXwMDO0wSN2EzNzEzW}`
 
 ## Process
-Ran `cat flag` to get the flag.
+Ran the following commands to get the flag - 
+```
+touch /tmp/pwn
+touch /tmp/college
+/challenge/run
+```
 
 ## What I learned
-Learned that cat can be used to append two files and give their output at the same time.
+The touch command is used to create files.
 
 ## References
 No references used.
@@ -167,17 +172,18 @@ No references used.
 <br><br><br><br><br>
 
 
-# Cat Command
+# Removing Files
 
-### Use cat to read out a file
+### Use the rm command to remove files
 
-**Flag:**
+**Flag:** `pwn.college{443FGC8KMB_XksHzp49UjrNiem2.QX2kDM1wSN2EzNzEzW}`
 
 ## Process
-Ran `cat flag` to get the flag.
+Ran `rm delete_me` and then ran `/challenge/check` to obtain the flag.
 
 ## What I learned
-Learned that cat can be used to append two files and give their output at the same time.
+rm can be used to remove files by using the cli.
+Syntax: `rm fileName`
 
 ## References
 No references used.
@@ -187,57 +193,109 @@ No references used.
 <br><br><br><br><br>
 
 
-# Cat Command
+# Moving Files
 
-### Use cat to read out a file
+### Use the mv command to move files
 
-**Flag:**
+**Flag:** `pwn.college{o_bNeRzcLI7RFTauwWc_iaDbc22.0VOxEzNxwSN2EzNzEzW}`
 
 ## Process
-Ran `cat flag` to get the flag.
+Ran `mv /flag /tmp/hack-the-planet` to move the file and then ran `/challenge/check` to obtain the flag.
 
 ## What I learned
-Learned that cat can be used to append two files and give their output at the same time.
+mv can be used to move/copy files from one to another.
+Syntax: `mv pathToFile1 pathToFile2`
 
 ## References
 No references used.
 
 
 
+
 <br><br><br><br><br>
 
 
-# Cat Command
 
-### Use cat to read out a file
 
-**Flag:**
+# Hidden Files
+
+### Use `ls -a` to see hidden files
+
+**Flag:** `pwn.college{I9P8fnmWNiusNoLxHof39QcMkOI.QXwUDO0wSN2EzNzEzW}`
+
 
 ## Process
-Ran `cat flag` to get the flag.
+Ran `ls -a /` to find the file `.flag-15712707419579`. Then I executed `cat .flag-15712707419579` to obtain the flag. Had some difficulty initially as I was trying to run it instead of catting but soon figured it out.
 
 ## What I learned
-Learned that cat can be used to append two files and give their output at the same time.
+The `-a` flag can be used with `ls` to display hidden files/files that start with a '.'.
 
 ## References
 No references used.
 
 
 
+
 <br><br><br><br><br>
 
 
-# Cat Command
+
+
+# An Epic Filesystem Quest
 
 ### Use cat to read out a file
 
-**Flag:**
+**Flag:** `pwn.college{oc0tsenIUv4ICFM9MlqCsLqbn34.QX5IDO0wSN2EzNzEzW}`
 
 ## Process
-Ran `cat flag` to get the flag.
+Ran
+```
+cd /
+ls -a
+cat MEMO
+```
+The clue guided me to `/usr/share/X11/locale/ru_RU.UTF-8`
+I then ran
+```
+ls /usr/share/X11/locale/ru_RU.UTF-8
+cat /usr/share/X11/locale/ru_RU.UTF-8/ALERT_TRAPPED
+```
+That guided me to `/usr/share/javascript/mathjax/unpacked/jax/output/CommonHTML/autoload`
+Then,
+```
+cd /usr/share/javascript/mathjax/unpacked/jax/output/CommonHTML/autoload
+ls -a
+cat INFO
+```
+Which then told me about a hidden clue in `/opt/linux/linux-5.4/include/config/pid`
+Then,
+```
+ls -a /opt/linux/linux-5.4/include/config/pid
+cat /opt/linux/linux-5.4/include/config/pid/.WHISPER
+```
+Then,
+```
+cd /opt/linux/linux-5.4/drivers/staging/fieldbus
+cat TEASER
+```
+Which told me about a trapped clue in `/opt/linux/linux-5.4/drivers/gpu/drm/tilcdc`,
+```
+ls /opt/linux/linux-5.4/drivers/gpu/drm/tilcdc
+cd /usr/share/racket/pkgs/option-contract-lib/racket/contract
+cat SNIPPET
+```
+```
+ls /usr/local/lib/python3.8/dist-packages/pwnlib/util/crc/__pycache__
+cat /usr/local/lib/python3.8/dist-packages/pwnlib/util/crc/__pycache__/SECRET-TRAPPED
+cd /usr/share/javascript/mathjax/jax/output/SVG/fonts/STIX-Web/Arrows
+ls
+cat DOSSIER
+```
+which finally led me to the flag.
+
 
 ## What I learned
-Learned that cat can be used to append two files and give their output at the same time.
+I learnt that this can be quite tedious, and it is very easy to get overwhelmned by it.
 
 ## References
 No references used.
