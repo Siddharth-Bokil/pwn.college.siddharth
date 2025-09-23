@@ -186,8 +186,12 @@ No references used.
 **Flag:** `pwn.college{AMySS6G0Fsh5YsqBLk0Qb-Fa9wA.QXzMDO0wSN2EzNzEzW}`
 
 ## Process
+Ran `/challenge/run ~/a` where 'a' is the name of the file where I'm copying the flag.
+Initially I thought I would have to cat the file but there was no need to do so.
+
 
 ## What I learned
+'~' is shorthand for /home/hacker/
 
 ## References
 No references used.
