@@ -23,7 +23,7 @@ No references used.
 
 # Catting Absolute Paths
 
-### Title
+### (Title)
 
 **Flag:** `pwn.college{EaJNHxyqFeeN8fPAoqe_gX7NT3V.QX5ETO0wSN2EzNzEzW}`
 
