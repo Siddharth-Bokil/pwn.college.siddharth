@@ -1,11 +1,11 @@
 # Intro to Commands
 
-### In this first challenge, the task was simple. I had to run a hello command and retrieve its output.
+### Run a hello command and retrieve its output.
 
 **Flag:** `pwn.college{0VfZEUYRzeLIlLsjs1Ve2zjbiSG.QX3YjM1wSN2EzNzEzW}`
 
 ## Process
-I use a linux environment and I didn't find any video explanation as to how to do the challenge from my terminal. Then I realised all I had to do was run 
+I use a linux operating system and I didn't find any video explanation as to how to do the challenge from my terminal. Then I realised all I had to do was run 
 `ssh hacker@dojo.pwn.college`
 in my own terminal **after** starting the challenge. Then I ran 
 ```
@@ -20,10 +20,11 @@ I learnt integration of pwn.college with my terminal, and also that Linux comman
 ## References
 No references used.
 
+<br><br><br><br><br>
 
 # Intro to Arguments
 
-### In this challenge I had to send an argument to a command.
+### Send an argument to a command.
 
 **Flag:** `pwn.college{4lBNS8sByRAS1UbAHYCOb9upwVf.QX4YjM1wSN2EzNzEzW}`
 
