@@ -41,3 +41,22 @@ Learnt how echo works and how some commands can take arguments.
 
 ## References
 No references used.
+
+
+<br><br><br><br><br>
+
+# Command History
+
+### Send an argument to a command.
+
+**Flag:** `pwn.college{48ty1TgZ4V8EPJmbnNXQhOzV9hz.0lNzEzNxwSN2EzNzEzW}`
+
+## Process
+I used the arrow keys to cycle through the command history and found the flag.
+
+## What I learned
+
+History can be accessed by running ```history``` and also by using the arrow keys.
+
+## References
+No references used.
