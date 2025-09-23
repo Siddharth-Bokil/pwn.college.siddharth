@@ -305,3 +305,83 @@ No references used.
 <br><br><br><br><br>
 
 
+
+# Making Directories
+
+### Use the mkdir command and make directories
+
+**Flag:** `pwn.college{wgIyPh4K7uzbPaZ2XZl0BT0lnbp.QXxMDO0wSN2EzNzEzW}`
+
+## Process
+Ran
+```
+mkdir /tmp/pwn
+cd /tmp/pwn
+touch college
+/challenge/run
+```
+to get the flag.
+
+## What I learnt
+mkdir creates directories/folders.
+Syntax: `mkdir folderName`
+
+## References
+No references used.
+
+
+
+<br><br><br><br><br>
+
+
+
+
+
+# Finding Files
+
+### Use the find command to find files
+
+**Flag:** `pwn.college{I0ipyFIymV3nMIasPfmoahmuUuC.QXyMDO0wSN2EzNzEzW}`
+
+## Process
+Ran
+```
+find / -name flag
+cat /usr/local/lib/python3.8/dist-packages/pwnlib/flag
+cat /opt/linux/linux-5.4/sound/soc/intel/flag
+```
+and then got the flag in that file.
+
+## What I learnt
+Syntax: `find searchSpace -name fileName`
+find / -name fileName searches the entire file system, not just the root directory.
+
+## References
+No references used.
+
+
+
+<br><br><br><br><br>
+
+
+
+# Linking files
+
+### Use the mkdir command and make directories
+
+**Flag:** ``
+
+## Process
+
+
+## What I learnt
+
+
+## References
+No references used.
+
+
+
+<br><br><br><br><br>
+
+
