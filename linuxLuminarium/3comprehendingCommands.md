@@ -369,13 +369,13 @@ No references used.
 
 ### Use the mkdir command and make directories
 
-**Flag:** ``
+**Flag:** `pwn.college{MqNwbCxn-bkgltPXMQDEGi9vag7.QX5ETN1wSN2EzNzEzW}`
 
 ## Process
-
+I ran `ln -s /flag ~/not-the-flag` and then retrieved the flag wit `/challenge/catflag`
 
 ## What I learnt
-
+Syntax: `ln -s originalFilePath linkFilePath`
 
 ## References
 No references used.
