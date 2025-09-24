@@ -23,7 +23,7 @@ No references used.
 
 # Learning Complex Usage
 
-### Desc
+### Give multiple aarguments to a command
 
 **Flag:** `pwn.college{wTII4nP9SVV12CDeW6Vi8WOyRLa.QX1ITO0wSN2EzNzEzW}`
 
@@ -47,7 +47,7 @@ No references used.
 
 # Reading Manuals
 
-### Desc
+### (title)
 
 **Flag:** `pwn.college{UOfxNFlq7jUjnwXt1jD-8L2CC_6.QX0EDO0wSN2EzNzEzW}`
 
@@ -69,16 +69,16 @@ No references used.
 
 # Searching Manuals
 
-### Desc
+### Navigate through a man page
 
-**Flag:** ``
+**Flag:** `pwn.college{cZldGJ6RZd14wMU2i_OtV4hOCVW.QX1EDO0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `man challenge` to read the manual and found that the `--db` argument gives the flag. Ran `/challenge/challenge --db` to get the flag.
 
 
 ## What I learnt
-
+You can search in a man page by typing `/` and then go up/down by typing `n/N`
 
 
 # References
@@ -90,16 +90,17 @@ No references used.
 
 # Searching For Manuals
 
-### Desc
+### Search `man` to find the command to print the flag 
 
-**Flag:** ``
+**Flag:** `pwn.college{gYq3p1y4cVaPyt3nrgguUN-Jrir.QX2EDO0wSN2EzNzEzW}`
 
 ## Process
-
+This one took longer than usual. I first ran `man man` to read about any arguments that man could take which would be of help. Found `man -k` which searches the descriptions of all commands for a string and returns all matches. One of the matches was `gqpycaytnr (1)       - print the flag!`
+The exclamation mark made me think this was it. First thought it was an argument to `/challenge/challenge` then found it the manpage can be opened by running `man gqpycaytnr` which led me to `/challenge/challenge --gqpyca 314` which gave me the flag.
 
 
 ## What I learnt
-
+`man`'s manpage can be accessed by running `man man` and you can search the description of all commands by running `man -k searchString`
 
 
 # References
@@ -112,16 +113,16 @@ No references used.
 
 # Helpful Programs
 
-### Desc
+### Read a manpage using `--help` arugment.
 
-**Flag:** ``
+**Flag:** `pwn.college{sQwqo9MKsnKTieB15skwwax3KoF.QX3IDO0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `/challenge/challenge --help` and then ran `/challenge/challenge -p` to get the value as 915. Then I ran `/challenge/challenge -g 915` to obtain the flag.
 
 
 ## What I learnt
-
+Some commands have guides that can be read by using the `--help` argument with them.
 
 
 # References
