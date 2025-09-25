@@ -135,16 +135,16 @@ No references used.
 
 # Help For Builtins
 
-### Desc
+### DFind the manpage of a builtin command
 
-**Flag:** ``
+**Flag:** `pwn.college{80NwsfHtX_T3k5l_gM_PELMjRrf.QX0ETO0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `help challenge`. Then, `challenge --secret 80NwsfHt` gave me the flag.
 
 
 ## What I learnt
-
+To find manpages of builtin commands, use `help commandName`
 
 
 # References
