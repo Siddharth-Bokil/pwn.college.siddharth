@@ -135,7 +135,7 @@ No references used.
 
 # Help For Builtins
 
-### DFind the manpage of a builtin command
+### Find the manpage of a builtin command
 
 **Flag:** `pwn.college{80NwsfHtX_T3k5l_gM_PELMjRrf.QX0ETO0wSN2EzNzEzW}`
 
