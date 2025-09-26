@@ -102,7 +102,7 @@ No references used.
 
 # Mixing Globs
 
-### Desc
+### Using multiple globs together
 
 **Flag:** `pwn.college{gPRWid05-ZMaJzlrLtZpOa0Z5G1.QX1IDO0wSN2EzNzEzW}`
 
@@ -123,14 +123,15 @@ No references used.
 
 # Exclusionary Globbing
 
-### Desc
+### Find files that are not listed by the glob
 
-**Flag:** ``
+**Flag:** `pwn.college{MFs3YuQMtTIeP0PvzDF8b_CXr8T.QX2IDO0wSN2EzNzEzW}`
 
 ## Process
+Ran `cd /challenge/files` and then ran `/challenge/run [!pwn]*`
 
 ## What I learnt
-
+`!` or `^` list files that are **not** under by the file globs.
 
 # References
 No references used.
@@ -144,12 +145,12 @@ No references used.
 
 # Tab Completion
 
-### Desc
+### Find a file using tab completion
 
-**Flag:** ``
+**Flag:** `pwn.college{Uwh2tYKGVA-zKMuG4tSw3C095_8.0FN0EzNxwSN2EzNzEzW}`
 
 ## Process
-
+Typed `cat /challenge/pwn` and then hit tab.
 
 ## What I learnt
 
