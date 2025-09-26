@@ -153,7 +153,7 @@ No references used.
 Typed `cat /challenge/pwn` and then hit tab.
 
 ## What I learnt
-
+Tab can be used to complete file paths.
 
 # References
 No references used.
@@ -167,15 +167,15 @@ No references used.
 
 # Multiple Options For Tab Completion
 
-### Desc
+### Tab can be used multiple timies to find available files
 
-**Flag:** ``
+**Flag:** `pwn.college{Q-n1BFLRfxnC12m3IF8zymAC_Gu.0lN0EzNxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `cd /challenge/files` and then ran `cat /challenge/files/pwncollege-flag` to get the flag.
 
 ## What I learnt
-
+If there are multiple files that match the text then they arer all displayed.
 
 # References
 No references used.
@@ -189,15 +189,15 @@ No references used.
 
 # Tab Completion on Commands
 
-### Desc
+### Use tab completion to find commands
 
-**Flag:** ``
+**Flag:** `pwn.college{M-vfKm9CF6M4UisSJYEZKcflEU3.0VN0EzNxwSN2EzNzEzW}`
 
 ## Process
-
+Typed `pwncollege` and then hit tab to get the flag.
 
 ## What I learnt
-
+Tab can be used to autocomplete commands as well.
 
 # References
 No references used.
