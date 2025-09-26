@@ -1,14 +1,14 @@
 # Redirecting Output
 
-### Desc
+### Use > to redirect output to a file
 
-**Flag:** ``
+**Flag:** `pwn.college{0ju3PxbdKMshW3JLJlRCFqsdS0p.QX0YTN0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `echo PWN > COLLEGE` to get the flag.
 
 ## What I learnt
-
+`>` can be used to redirect output to files
 
 ## References
 No references used.
@@ -19,15 +19,15 @@ No references used.
 
 # Redirecting More Output
 
-### Desc
+### Use > to redirect output to a file
 
-**Flag:** ``
+**Flag:** `pwn.college{AZUn_BNDt-hX2pITq0IvMK8sgvm.QX1YTN0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `/challenge/run > myflag` and then `cat myflag` to get the flag.
 
 ## What I learnt
-
+`>` can be used to redirect output from commands as well.
 
 ## References
 No references used.
@@ -39,15 +39,15 @@ No references used.
 
 # Appending Output
 
-### Desc
+### Redirect out to a file in append mode
 
-**Flag:** ``
+**Flag:** `pwn.college{wAhP6PNM1LZN6bN3tWHYexWGSYX.QX3ATO0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `/challenge/run >> ~/the-flag` and then ran `cat ~/the-flag` to get the flag.
 
 ## What I learnt
-
+`>>` writes data to a file in append mode whereas `>` overwrites/truncates it.
 
 ## References
 No references used.
