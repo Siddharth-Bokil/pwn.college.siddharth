@@ -47,7 +47,7 @@ No references used.
 Ran `/challenge/run >> ~/the-flag` and then ran `cat ~/the-flag` to get the flag.
 
 ## What I learnt
-`>>` writes data to a file in append mode whereas `>` overwrites/truncates it.
+`>>` writes data to a file in append mode whereas `>` overwrites it.
 
 ## References
 No references used.
@@ -59,15 +59,19 @@ No references used.
 
 # Redirecting Erros
 
-### Desc
+### Use File Descriptors to redirect specific data streams
 
-**Flag:** ``
+**Flag:** `pwn.college{MMl06-NHw-OcDzq2Ye47z6WAuwD.QX3YTN0wSN2EzNzEzW`
 
 ## Process
-
+Ran `/challenge/run > myflag 2> instructions` and then ran `cat myflag` to get the flag.
 
 ## What I learnt
-
+File descriptors can be used to direct different data streams:
+  FD 0: Standard Input
+  FD 1: Standard Output
+  FD 2: Standard Error
+This can be used by specifying the number before `>` to redirect the specfic stream. If no number is mentioned, Standard Output(FD 1) is redirected.
 
 ## References
 No references used.
@@ -79,15 +83,15 @@ No references used.
 
 # Redirecting Input
 
-### Desc
+### Use < to redirect input
 
-**Flag:** ``
+**Flag:** `pwn.college{EzqgCrXGL2_O1EqC3WgM_LSuu0H.QXwcTN0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `echo COLLEGE > PWN` and then `/challenge/run < PWN`
 
 ## What I learnt
-
+`<` can be used to redirect input to a command.
 
 ## References
 No references used.
