@@ -247,13 +247,13 @@ No references used.
 
 ### Desc
 
-**Flag:** ``
+**Flag:** `pwn.college{Qiy3bpA4TF2FGNW8-DN3tD5DV6J.QXxQDM2wSN2EzNzEzW}`
 
 ## Process
-
+Took a LOT of time. Ran `/challenge/hack 2> >(/challenge/the) > >(/challenge/planet)` to get the flag in the end. Initally I thought the use of `|` was mandatory but I always ended up mixing stdout and stderr together by using `|`. Then I tried experimenting with the `tee` but that didn't help either. Then I tried to keep it simple and went back to `>` to find out it was the right answer.
 
 ## What I learnt
-
+`>` gives the initial input as output to the file/command ahead.
 
 ## References
 No references used.
