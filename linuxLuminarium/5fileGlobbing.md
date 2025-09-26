@@ -104,13 +104,13 @@ No references used.
 
 ### Desc
 
-**Flag:** ``
+**Flag:** `pwn.college{gPRWid05-ZMaJzlrLtZpOa0Z5G1.QX1IDO0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `cd /challenge/files` and then ran `/challenge/run [cep]*` to get the flag. I was looking at the ending for too long until I realised I can use the starting as well.
 
 ## What I learnt
-
+File globs can be used anywhere in the entire statement.
 
 # References
 No references used.
@@ -128,7 +128,6 @@ No references used.
 **Flag:** ``
 
 ## Process
-
 
 ## What I learnt
 
