@@ -103,15 +103,15 @@ No references used.
 
 # Grepping Stored Results
 
-### Desc
+### Use grep to search in a stored result
 
-**Flag:** ``
+**Flag:** `pwn.college{ISSXkuW9Xgud8gs42WYGFG3uAWP.QX4EDO0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `/challenge/run > /tmp/data.txt` and then `grep pwn  /tmp/data.txt` to obtain the flag.
 
 ## What I learnt
-
+Syntax for grep: `grep searchText searchFile`
 
 ## References
 No references used.
@@ -120,38 +120,19 @@ No references used.
 
 <br><br><br><br><br>
 
-
-# Greppinng Stored Results
-
-### Desc
-
-**Flag:** ``
-
-## Process
-
-
-## What I learnt
-
-
-## References
-No references used.
-
-
-
-<br><br><br><br><br>
 
 
 # Grepping Live Output
 
-### Desc
+### Use `|` to grep live output
 
-**Flag:** ``
+**Flag:** `pwn.college{4aDnsmf8Q01GPE9bBwKISHSvSsr.QX5EDO0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `/challenge/run | grep pwn` to get the flag.
 
 ## What I learnt
-
+`|` can be used to redirect output of one command into input of other.
 
 ## References
 No references used.
@@ -163,15 +144,15 @@ No references used.
 
 # Grepping Errors
 
-### Desc
+### Use `>&` to convert data streams
 
-**Flag:** ``
+**Flag:** `pwn.college{gYi0_-oEeDN0C4TV_yWHuYqbyra.QX1ATO0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `/challenge/run 2>& 1 | grep pwn` to get the the flag.
 
 ## What I learnt
-
+`>&` converts one data stream into another. In this case `2>& 1` converted the error stream into the output stream.
 
 ## References
 No references used.
@@ -183,15 +164,15 @@ No references used.
 
 # Filtering With Grep -v
 
-### Desc
+### Use `grep -v` to filter out decoys
 
-**Flag:** ``
+**Flag:** `pwn.college{4GvjlI14vR4xgbtc4QIc1ncpLbB.0FOxEzNxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `/challenge/run | grep -v DECOY` to obtain the flag.
 
 ## What I learnt
-
+`grep -v` to invert the output the grep. Instead of giving the matched statements, `grep -v` returns the unmatched statements.
 
 ## References
 No references used.
@@ -203,15 +184,17 @@ No references used.
 
 # Duplicating Piped Data with Tee
 
-### Desc
+### Use `tee` to debug command output
 
-**Flag:** ``
+**Flag:** `pwn.college{whbOeGeUMJ3LDZZ1R9iUTorgSXp.QXxITO0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `/challenge/pwn | tee data | /challenge/college` and then ran `/challenge/pwn --secret whbOeGeU | /challenge/college` to get the flag.
 
 ## What I learnt
-
+`tee` can be used with `|` to debug/intercept the input being sent to a comamnd.
+Syntax:
+  `command1 | tee debugFile | command2`
 
 ## References
 No references used.
@@ -223,15 +206,15 @@ No references used.
 
 # Process Substitution for Input
 
-### Desc
+### Use Process Substitution with diff
 
-**Flag:** ``
+**Flag:** `pwn.college{UPd4qFSquUrgzWQu25j4bFUBIDw.0lNwMDOxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `diff <(/challenge/print_decoys) <(/challenge/print_decoys_and_flag)` to get the flag.
 
 ## What I learnt
-
+`<(givenFile)` is a placeholder for the output of the file that is given to it.
 
 ## References
 No references used.
@@ -242,15 +225,16 @@ No references used.
 
 # Writing to Multiple Programs
 
-### Desc
+### Use `>()` to redirect input along with `tee`
 
-**Flag:** ``
+**Flag:** `pwn.college{4gfnjANi2Sc1chLW-G4ENeA5A22.QXwgDN1wSN2EzNzEzW}`
 
 ## Process
-
+Ran `/challenge/hack | tee >(/challenge/the) | /challenge/planet` to get the flag.
+Initially I messed up the syntax of tee and thought it gives 2 files, but then I realised it takes one file and one command which solved the problem.
 
 ## What I learnt
-
+While `<(command)` redirects output of given command, `>(command)` redirects input to given command.
 
 ## References
 No references used.
