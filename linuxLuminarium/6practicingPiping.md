@@ -256,7 +256,7 @@ Took a LOT of time. Ran `/challenge/hack 2> >(/challenge/the) > >(/challenge/pla
 `>` gives the initial input as output to the file/command ahead.
 
 ## References
-No references used.
+chatGPT conversation
 
 
 
