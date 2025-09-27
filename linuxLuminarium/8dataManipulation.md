@@ -21,7 +21,7 @@ No references used.
 
 # Deleting Characters
 
-### Desc
+### Use `tr` to delete specific characters
 
 **Flag:** `pwn.college{UnXFaIQ07bwrxwmEBSgJjLliWoU.0FNxEzNxwSN2EzNzEzW}`
 
@@ -42,7 +42,7 @@ No references used.
 
 # Deleting Newlines
 
-### Desc
+### Use `tr` to delete newline characters 
 
 **Flag:** `pwn.college{cs6RfJ3QPX0OP9HhbAk9XwxR_G-.0VNxEzNxwSN2EzNzEzW}`
 
@@ -63,7 +63,7 @@ No references used.
 
 # Extracting the First Lines With Head
 
-### Desc
+### Use `head` to extract specfic content
 
 **Flag:** `pwn.college{gr7vFpvAJjEZ_dt-6MVLpSoeS4C.0lNxEzNxwSN2EzNzEzW}`
 
@@ -84,18 +84,19 @@ No references used.
 
 # Extracting Specfic Sections of Text
 
-### Desc
+### Use `cut` to select specific data
 
-**Flag:** ``
+**Flag:** `pwn.college{IQPgnb7viV3Eoit6j29a-G8PIJB.01NxEzNxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `echo $(/challenge/run)` to find the format of the input and then ran ` /challenge/run | cut -d ' ' -f2,4,6,8,10,12,14,16,18,20 | tr -d "\n"` to get the flag.
 
 ## What I learnt
-
+`cut` takes `-d 'delimiter'` to get the input seperated and then `-fnum1,num2,num3..` to keep the columns num1,num2,num3.
 
 ## References
-No references used.
+https://www.gnu.org/software/coreutils/manual/html_node/cut-invocation.html#cut-invocation
+chatGPT conversation
 
 
 
@@ -105,15 +106,20 @@ No references used.
 
 # Sorting Data
 
-### Desc
+### Use `sort` to get the flag
 
-**Flag:** ``
+**Flag:** `pwn.college{4-Uhxf_bas1T2uuw2ORJ9XjmUnW.0FM0MDOxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `sort /challenge/flags.txt` and got the flag at the end.
 
 ## What I learnt
-
+`sort` orders output alphabetically by default. 
+Takes arguments-
+  -r : Reverse alphabetical order
+  -n : Numeric sort (for numbers)
+  -u : Unique lines only (removes duplicates)
+  -R : Random order
 
 ## References
 No references used.
