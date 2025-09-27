@@ -245,7 +245,7 @@ No references used.
 
 # Split-piping Stderr and Stdout
 
-### Desc
+### Send stderr and stdout stream to 2 different files
 
 **Flag:** `pwn.college{Qiy3bpA4TF2FGNW8-DN3tD5DV6J.QXxQDM2wSN2EzNzEzW}`
 
@@ -265,15 +265,15 @@ No references used.
 
 # Named Pipes
 
-### Desc
+### Make, provide and read output from a FIFO
 
-**Flag:** ``
+**Flag:** ``pwn.college{s48BVv-Mqz8rhXXWRI72CY-WwmV.01MzMDOxwSN2EzNzEzW}
 
 ## Process
-
+Needed 2 terminals for this one. Ran `mkfifo /tmp/flag_fifo` and then `cat /tmp/flag_fifo` in the first terminal. In the other one, I ran `/challenge/run > /tmp/flag_fifo` to get the flag in the first terminal.
 
 ## What I learnt
-
+FIFOs only execute a command when both read and write operations are acting on them.
 
 ## References
 No references used.
