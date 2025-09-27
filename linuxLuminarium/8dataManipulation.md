@@ -1,4 +1,4 @@
-# Translating Charactera
+# Translating Characters
 
 ### Use `tr` to switch character cases
 
@@ -44,13 +44,13 @@ No references used.
 
 ### Desc
 
-**Flag:** ``
+**Flag:** `pwn.college{cs6RfJ3QPX0OP9HhbAk9XwxR_G-.0VNxEzNxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `/challenge/run | tr -d "\n"` to get the flag.
 
 ## What I learnt
-
+`"\n"` can be used to mention newline character to `tr` command.
 
 ## References
 No references used.
@@ -65,13 +65,13 @@ No references used.
 
 ### Desc
 
-**Flag:** ``
+**Flag:** `pwn.college{gr7vFpvAJjEZ_dt-6MVLpSoeS4C.0lNxEzNxwSN2EzNzEzW}`
 
 ## Process
-
+Ran ` /challenge/pwn | head -n 7 | /challenge/college` to get the flag.
 
 ## What I learnt
-
+`head` can be used to extract the first few lines of any file. It takes the argument `-n` as the number of initial lines to extract. `input | head -n 7` extracts the first 7 lines of given input.
 
 ## References
 No references used.
