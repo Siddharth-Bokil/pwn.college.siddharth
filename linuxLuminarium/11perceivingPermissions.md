@@ -44,15 +44,15 @@ No references used.
 
 # Fun With Groups Names 
 
-## Desc
+## Find and chnage the group of a file
 
-**Flag:** ``
+**Flag:** `pwn.college{0V9IfE4UD1xLQWBWUPnL0kU48sR.QXycjM1wSN2EzNzEzW}`
 
 ## Process
-
+Ran `chgrp grp15397 /flag` and then `cat /flag` to obtain the flag. 
 
 ## What I learnt
-
+`ls -al` can be used to see the permissions, owner. and group of files. The current users group can be seen by running `id`
 
 ## References
 No references used.
