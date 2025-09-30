@@ -1,14 +1,15 @@
 # Changing File Ownership 
 
-## Desc
+## Use `chown` to change file ownership
 
-**Flag:** ``
+**Flag:** `pwn.college{4lFmvHZi4O-s4ne3W4V2Oco-p_Y.QXxEjN0wSN2EzNzEzW}`
 
 ## Process
-
+Ran `chown hacker /flag` to make myself the owner. Then I ran `cat /flag` to get the flag.
 
 ## What I learnt
-
+`chown` can be used to change ownership of a file.
+Syntax: `chown newOwner fileName`
 
 ## References
 No references used.
@@ -23,13 +24,14 @@ No references used.
 
 ## Desc
 
-**Flag:** ``
+**Flag:** `pwn.college{EGM7KRLrUhcNJOyULrrjWJJaEhU.QXxcjM1wSN2EzNzEzW}`
 
 ## Process
-
+Ran `chgrp hacker /flag` and then ran `cat /flag` to get the flag.
 
 ## What I learnt
-
+`chgrp` can be used to change the group of a file. This is important because in most cases permissions are controlled on a group basis.
+Syntax: `chgrp newGroup fileName`
 
 ## References
 No references used.
