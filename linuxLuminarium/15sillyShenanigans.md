@@ -16,19 +16,30 @@ No references used.
 
 
 
-<br><br><br><br<br>
+<br><br><br><br><br>
 
 
 
 # Sniffing Input
 
-### Desc
+### Make a bash script to get input
 
 
-**Flag:** ``
+**Flag:** `pwn.college{s7pxa6UX26yxmgYRrzPaHKP8uI_.0VNzEzNxwSN2EzNzEzW}`
 
 ## Process
+Ran `nano /home/zardus/.bashrc` and wrote
+```
+read input
 
+if [ $input == "flag_checker" ]
+then
+        echo "Type the flag"
+        read flag
+        cat $flag
+fi
+```
+Then I ran `challenge/victim` to get the flag.
 
 ## What I learnt
 
@@ -45,10 +56,10 @@ No references used.
 
 # Overshared Directories
 
-### Desc
+### Rewrite a file in an opened up directory
 
 
-**Flag:** ``
+**Flag:** `pwn.college{gK-rwkpnIfR2Hxd2J_wvqRMDtOi.0FM0EzNxwSN2EzNzEzW}`
 
 ## Process
 
