@@ -292,14 +292,14 @@ No references used.
 
 ### Desc
 
-**Flag:** ``
+**Flag:** `pwn.college{s2vw9a1Qt9J-gGZ059Fnq_4LDve.0lMwgDOxwSN2EzNzEzW}`
 
 
 ## Process
-
+Ran `cat /challenge/run` to read the challenge file and found the password. Then ran the file, `/challenge/run` and gave the password as "hack the PLANET" to get the flag.
 
 ## What I learnt
-
+All challenges in this module are implemented as shell scripts and can be catted out.
 
 ## References
 No references used.
