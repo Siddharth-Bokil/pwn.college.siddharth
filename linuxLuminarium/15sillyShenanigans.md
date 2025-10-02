@@ -100,8 +100,7 @@ No references used.
 
 # Sniffing Process Arguments
 
-### Desc
-
+### 
 
 **Flag:** `pwn.college{0iGLkNiAjRiYgwfLnA3yXGo5biF.0FOzEzNxwSN2EzNzEzW}`
 
@@ -123,16 +122,15 @@ No references used.
 
 # Snooping on Configuratiins
 
-### Desc
+### Read .bashrc to find a key
 
-
-**Flag:** ``
+**Flag:** `pwn.college{Y2JpXi2Spf9JBu3AuZ6nl8k_kRF.0lM0EzNxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `cat /home/zardus/.bashrc` to read the api key and then ran `flag_getter --key sk-2640723931` to get the flag,
 
 ## What I learnt
-
+.bashrc is world-readable by default.
 
 ## References
 No references used.
