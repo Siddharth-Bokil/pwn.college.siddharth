@@ -39,10 +39,10 @@ then
         cat $flag
 fi
 ```
-Then I ran `challenge/victim` to get the flag.
+Then I ran `/challenge/victim` to get the flag.
 
 ## What I learnt
-
+Input into the terminal can be read by any program with the correct permissions.
 
 ## References
 No references used.
@@ -62,10 +62,10 @@ No references used.
 **Flag:** `pwn.college{gK-rwkpnIfR2Hxd2J_wvqRMDtOi.0FM0EzNxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `rm /home/zardus/.bashrc` and then `nano /home/zardus/.bashrc` and wrote the previous code into the file. Then, on running `/challenge/victim` I got the flag
 
 ## What I learnt
-
+Files can be accessed if in an opened up directory.
 
 ## References
 No references used.
