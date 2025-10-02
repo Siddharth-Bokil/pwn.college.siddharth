@@ -290,7 +290,7 @@ No references used.
 
 # Reading Shell Scripts
 
-### Desc
+### Read `challenge/run`
 
 **Flag:** `pwn.college{s2vw9a1Qt9J-gGZ059Fnq_4LDve.0lMwgDOxwSN2EzNzEzW}`
 
