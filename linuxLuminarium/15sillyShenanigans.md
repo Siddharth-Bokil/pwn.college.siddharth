@@ -100,7 +100,7 @@ No references used.
 
 # Sniffing Process Arguments
 
-### 
+### Read arguments passed to commands using `ps aux`
 
 **Flag:** `pwn.college{0iGLkNiAjRiYgwfLnA3yXGo5biF.0FOzEzNxwSN2EzNzEzW}`
 
