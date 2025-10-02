@@ -66,7 +66,7 @@ No references used.
 
 # Your First Shell Script
 
-### Desc
+### Make a shell script
 
 **Flag:** `pwn.college{gmf5of8Py_YRL-1rXR88DUWn9_-.QXxcDO0wSN2EzNzEzW}`
 
@@ -92,7 +92,7 @@ No references used.
 
 # Redirecting Script Output
 
-### Desc
+### (title)
 
 **Flag:** `pwn.college{MPfVVkUUhM5Hio24en396ql_6NY.QX4ETO0wSN2EzNzEzW}`
 
@@ -113,7 +113,7 @@ No references used.
 
 # Executable Shell Scripts
 
-### Desc
+### Make a shell script an executable
 
 **Flag:** `pwn.college{05udjlZj9z6u6F3j3Anj8yBfdxS.QX0cjM1wSN2EzNzEzW}`
 
@@ -134,16 +134,20 @@ No references used.
 
 # Understanding Shebangs
 
-### Desc
+### Add #! to a file to identify it as a shell script
 
-**Flag:** ``
-
+**Flag:** `pwn.college{YbC753spXdrEgQ3gvxi-ZKKTMAc.0VOzMDOxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `nano solve.sh` in the /home/hacker directory. Wrote
+```
+#!/bin/bash
+echo "hack the planet"
+```
+in the shell script and made it executable by running `chmod a+x ./solve.sh` and then ran `/challenge/run` to get the flag.
 
 ## What I learnt
-
+`#!` is called a shebang. `#1/bin.bash` is for bash scripts. It is appended in the beginning to tell that it is to be run as a shell script as the extensions is not looked at.
 
 ## References
 No references used.
@@ -156,16 +160,16 @@ No references used.
 
 # Scripting With Arguments
 
-### Desc
+### Reverse arguments given to a shell script
 
-**Flag:** ``
-
+**Flag:** `pwn.college{0LNwBgwvN8ZAqSWmSSbyLyM05FK.0VNzMDOxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `nano solve.sh` and wrote `echo "$2 $1"` to reverse the arguments.
+Then ran `/challenge/run` to get the flag.
 
 ## What I learnt
-
+The first argument can be accessed by `$1` second by `$2` and so on inside the shell script.
 
 ## References
 No references used.
@@ -178,16 +182,32 @@ No references used.
 
 # Scripting With Conditionals
 
-### Desc
+### Use if conditions in the shell script
 
-**Flag:** ``
-
+**Flag:** `pwn.college{8xMQtJuiRcL8Utbc8cgw9zAP6UE.0lNzMDOxwSN2EzNzEzW}`
 
 ## Process
+Ran `nano solve.sh` to edit the script. Wrote 
+```
+#!/bin/bash
 
+if [ "$1" == "pwn" ]
+then
+        echo "college"
+fi
+```
+Then ran `/challenge/run` to get the flag.
 
 ## What I learnt
-
+Conditions can be applied to shell scripts using if statements but the syntax is more strict.
+Syntax:
+  ```
+  if [ cond ]
+  then
+    codeToRun
+  fi
+  ```
+All spaces must be just as they are.
 
 ## References
 No references used.
@@ -200,38 +220,26 @@ No references used.
 
 # Scripting With Default Cases
 
-### Desc
+### Use else condition in shell script
 
-**Flag:** ``
-
-
-## Process
-
-
-## What I learnt
-
-
-## References
-No references used.
-
-
-
-<br><br><br><br><br>
-
-
-
-# Scripting With Default Cases
-
-### Desc
-
-**Flag:** ``
-
+**Flag:** `pwn.college{QvyHAqc7Rck4PqQ_tHgpRqKT-ID.01NzMDOxwSN2EzNzEzW}`
 
 ## Process
+Ran `nano solve.sh` to edit the script. Wrote
+```                             
+#!/bin/bash
 
+if [ "$1" == "pwn" ]
+then
+        echo "college"
+else
+        echo "nope"
+fi
+```
+Then ran `/challenge/run` to get the flag.
 
 ## What I learnt
-
+else conditions can be used in shell scripts. They do not have a "then" statement.
 
 ## References
 No references used.
@@ -244,16 +252,32 @@ No references used.
 
 # Scripting With Multiple Conditions
 
-### Desc
+### Use if, elif and else conditions
 
-**Flag:** ``
-
+**Flag:** `pwn.college{Qir0w1KBdP8dy6zTXeQ1h8yRlZg.0FOzMDOxwSN2EzNzEzW}`
 
 ## Process
+Ran `nano solve.sh` to edit the shell script. Wrote
+```
+#!/bin/bash
 
+if [ "$1" == "pwn" ]
+then
+        echo "college"
+elif [ "$1" == "hack" ]
+then
+        echo "the planet"
+elif [ "$1" == "learn" ]
+then
+        echo "linux"
+else
+        echo "unknown"
+fi
+```
+and then ran `/challenge/run` to get the flag.
 
 ## What I learnt
-
+elif conditions can be applied to bash scripts. They have a "then statement" just as if did.
 
 ## References
 No references used.
