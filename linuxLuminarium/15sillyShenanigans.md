@@ -49,7 +49,7 @@ No references used.
 
 
 
-<br><br><br><br<br>
+<br><br><br><br><br>
 
 
 
@@ -62,7 +62,7 @@ No references used.
 **Flag:** `pwn.college{gK-rwkpnIfR2Hxd2J_wvqRMDtOi.0FM0EzNxwSN2EzNzEzW}`
 
 ## Process
-Ran `rm /home/zardus/.bashrc` and then `nano /home/zardus/.bashrc` and wrote the previous code into the file. Then, on running `/challenge/victim` I got the flag
+Ran `rm /home/zardus/.bashrc` and then `nano /home/zardus/.bashrc` and wrote the previous code into the file. Then, on running `/challenge/victim` I got the flag.
 
 ## What I learnt
 Files can be accessed if in an opened up directory.
@@ -72,30 +72,29 @@ No references used.
 
 
 
-<br><br><br><br<br>
+<br><br><br><br><br>
 
 
 
 # Tricky Linking
 
-### Desc
+### Make a symlink to a file to get the flag
 
 
-**Flag:** ``
+**Flag:** `pwn.college{M_u0IvXnGpPUjB3lWAA8TnlhiIJ.0VM0EzNxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `rm /tmp/collab/evil-commands.txt` and then `ln -s /home/zardus/.bashrc /tmp/collab/evil-commands.txt` to create the symbolic link. Ran `nano /home/zardus/.bashrc` and then ran `/challenge/victim` twice to get the flag.
 
 ## What I learnt
-
+Anything in .bashrc is ran as the root and is therefore allowed. So making a sym link to .bashrc is a great idea.
 
 ## References
 No references used.
 
 
 
-<br><br><br><br<br>
-
+<br><br><br><br><br>
 
 
 
@@ -104,13 +103,13 @@ No references used.
 ### Desc
 
 
-**Flag:** ``
+**Flag:** `pwn.college{0iGLkNiAjRiYgwfLnA3yXGo5biF.0FOzEzNxwSN2EzNzEzW}`
 
 ## Process
-
+Ran `ps aux` to see arguments passed to the automation script. Ran `su zardus` and entered the password when prompted to login as zardus and then ran `sudo cat /flag` to get the flag.
 
 ## What I learnt
-
+`ps aux` does not show the whole output in a minimized window.
 
 ## References
 No references used.
