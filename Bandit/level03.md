@@ -1,14 +1,14 @@
 # Level 3
 
-### Read a file with spaces in its name
+### Read a hidden file
 
-**Password:** `MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx`
+**Password:** `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`
 
 ## Process
-Ran `cat /home/bandit2/--spaces\ in\ this\ filename--` to read the password.
+Ran `cd inhere` and then `ls -al`. Then running `cat ./...Hiding-From-You` gave me the flag.
 
 ## What I learnt
-Prepend `\` before spaces to call a file having spaces.
+-
 
-## References used
+## References
 -

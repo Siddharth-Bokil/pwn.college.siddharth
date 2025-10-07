@@ -1,14 +1,14 @@
 # Level 1
 
-### Find password in readme
+### Read a file
 
-**Password:** `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
+**Password:** `263JGJPfgU6LtdEvgfWU1XP5yac29mFx`
 
 ## Process
-Ran `ssh bandit0@bandit.labs.overthewire.org -p 2220` to connect. Ran `cat readme` and found the password. Ran `exit`.
+Ran `cat /home/bandit1/-` to get the password since `cat -` did not work.
 
 ## What I learnt
-Exit to connect to next level
+-
 
 ## References used
 -
