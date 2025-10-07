@@ -1,6 +1,6 @@
 # Level 10
 
-### Desc
+### Decode a base64 file
 
 **Password:** `dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr`
 
