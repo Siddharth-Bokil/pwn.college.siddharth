@@ -1,6 +1,6 @@
 # Level 9
 
-## Desc
+## Find human-readable text in a file
 
 **Password:** `FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey`
 
