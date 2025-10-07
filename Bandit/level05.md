@@ -11,4 +11,4 @@ Ran `cd inhere/` and `ls -al` to see a bunch of directory having a bunch of file
 Find can search for a specfic file size and executability. `c` stands for characters.
 
 ## Refereneces
--
+https://unix.stackexchange.com/questions/313442/find-human-readable-files
