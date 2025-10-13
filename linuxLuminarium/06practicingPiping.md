@@ -57,7 +57,7 @@ No references used.
 <br><br><br><br><br>
 
 
-# Redirecting Erros
+# Redirecting Errors
 
 ### Use File Descriptors to redirect specific data streams
 
